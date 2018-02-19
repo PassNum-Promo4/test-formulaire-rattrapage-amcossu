@@ -8,51 +8,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-            <form id="formContact" onsubmit="formContact_result(); return false;">
-                <fieldset>
-                    <legend>Informations personnelles</legend>
-                    <div class="informations">
-                        <div>
-                            <label for="formContact__prenom">Prénom*</label>
-                            <input id="formContact__prenom" type="text" name="prenom" placeholder="Inserer votre prénom ici" required="required">
-                            <label for="formContact__nom">Nom*</label>
-                            <input id="formContact__nom" type="text" name="nom" placeholder="Inserer votre nom ici" required="required">
-                        </div>
-                        <div>
-                            <label for="formContact__date_naissance">Date naissance*</label>
-                            <input id="formContact__date_naissance" type="text" name="date_naissance" value=" jj / mm / aaaa" required="required">
-                        </div>
+ <div class="container">
+        <form id="formContact" onsubmit="formContact_result(); return false;">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div class="informations">
+                    <div>
+                        <label for="formContact__prenom">Prénom*</label>
+                        <input id="formContact__prenom" type="text" name="prenom" placeholder="Inserer votre prénom ici" required="required">
+                        <label for="formContact__nom">Nom*</label>
+                        <input id="formContact__nom" type="text" name="nom" placeholder="Inserer votre nom ici" required="required">
                     </div>
-                </fieldset>
-                <div class="joueur">
-                    <span>Número du joueur (compris entre 9 et 99) </span>
-                    <input type="number" />
-                </div>
-                <fieldset>
-                    <legend>Liste des postes auxquels je peux évoluer</legend>
-                    <div class="postes">
-                        <div>
-                            <input type="checkbox" id="defenseur" name="poste_defenseur">
-                            <label for="defenseur">Défenseur</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="milieu" name="poste_milieu">
-                            <label for="milieu">Milieu</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="attaquant" name="poste_attaquant">
-                            <label for="attaquant">Attaquant</label>
-                        </div>
-                        <div>
-                            <button type="submit">Obtenir des informations supplémentaires sur les postes</button>
-                        </div>
+                    <div>
+                        <label for="formContact__date_naissance">Date naissance*</label>
+                        <input id="formContact__date_naissance" type="text" name="date_naissance" value=" jj / mm / aaaa" required="required">
                     </div>
-                </fieldset>
-                <div class="btn">
-                    <button type="submit">Envoyer</button>
-                    <span>* = Champs obligatoires</span>
                 </div>
-            </form>
+            </fieldset>
+            <div>
+                <span>Número du joueur (compris entre 9 et 99) </span>
+                <input type="number" />
+            </div>
+            <fieldset>
+                <legend>Liste des postes auxquels je peux évoluer</legend>
+                <div>
+                    <div>
+                        <input type="checkbox" id="defenseur" name="poste" value="defenseur">
+                        <label for="defenseur">Défenseur</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="milieu" name="poste" value="milieu">
+                        <label for="milieu">Milieu</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="attaquant" name="poste" value="attaquant">
+                        <label for="attaquant">Attaquant</label>
+                    </div>
+                    <div>
+                        <button type="submit">Obtenir des informations supplémentaires sur les postes</button>
+                    </div>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Envoyer</button>
+                <span>* = Champs obligatoires</span>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
